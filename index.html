@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Seedify  - Fund </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+       
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="seed-logo.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .warning-top{
+            padding:15px 10px 5px 10px;
+            text-align: center;
+            background-image: url(/img/test.png);
+            background-position: center;
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(0, 0, 0);
+        }
+        .warning-top .x{
+            font-size: large;
+            color: rgba(0, 0, 0, 0.637);
+            font-weight: 900;
+            font-size: x-large;
+        }
+        .connect-wallet-btn{
+            background-image: url(/img/bg-img.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            margin-left: 10px;
+        }
+        .connect-wallet-btn-dark{
+            background-image: url(/img/bg-img-dark.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            margin-left: 10px;
+        }
+
+        .connect-wallet-btn:hover{
+            background-image: url(/img/bg-img-dark.png);
+            color: white;
+           
+        }
+        .connect-wallet-btn-dark:hover{
+            background-image: url(/img/bg-img.png);
+            color: white;
+        }
+
+        .nav-bar::after {
+            background-image: url(/img/header-after.png);
+            width: 100%;
+            background-size: 100% 100%;
+            position: absolute;
+            height: 5px;
+            content: "";
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 0;
+        }
+        .header-text{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .header-text h1{
+            /* font-size: xx-large; */
+            color: white;
+            padding-top: 100px;
+            font-size: 4em;
+            /* font-family: helvetica, arial; */
+            font-weight:lighter;
+        }
+        .header-buttons{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:stretch;
+            margin: 50px 0;
+        }
+        
+        @media (max-width: 991.98px) {
+                .header-butons{
+                    justify-content: left;
+                }
+
+
+                .mob-disappear{
+                    display:none;
+                }
+                
+             .header-text h1{
+            padding-top: 100px;
+            font-size: 2em;
+        
+        }
+        }
+
+        .header-buttons div{
+            background-image: url(/img/bg-img.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .header-buttons div a{
+            padding: 20px 70px;
+            color: #7bf5fb;
+            display: inline-block
+        }
+
+
+
+        @import url("https://fonts.googleapis.com/css?family=Abel|Cairo|Changa|Economica|Exo+2|Khand|Lekton|Maven+Pro|Orbitron|Rajdhani|Roboto|Titillium+Web|Unica+One");
+body {
+  /* padding: 2rem; */
+  /* background-color: #1b2a32;
+  color: white; */
+}
+
+.unique {
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  position: relative;
+  color: #7bf5fb;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__title {
+  text-align: left;
+  color: #fff;
+  padding: 200px 30px 100px 30px;
+}
+.section--divergence {
+  font-family: "Orbitron", "Rajdhani", "Khand", "Abel", "Titillium Web", "Changa", "Cairo", "Economica", "Exo 2", "Lekton", "Unica One", "Maven Pro", "Roboto", sans-serif;
+}
+.section--divergence .links__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section--divergence .link {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.section--divergence .link .link__corner {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  background-color: white;
+}
+.section--divergence .link .link__corner--top {
+  top: 0;
+}
+.section--divergence .link .link__corner--left, .section--divergence .link .link__corner--left_side {
+  left: 0;
+}
+.section--divergence .link .link__corner--right, .section--divergence .link .link__corner--right_side {
+  right: 0;
+}
+.section--divergence .link .link__corner--bottom, .section--divergence .link .link__corner--bottom_side {
+  bottom: 0;
+}
+.section--divergence .link:hover .link__corner {
+  -webkit-animation-duration: 350ms;
+          animation-duration: 350ms;
+}
+.section--divergence .link:hover .link__corner--top.link__corner--left {
+  -webkit-animation-name: divergence--top_left;
+          animation-name: divergence--top_left;
+}
+.section--divergence .link:hover .link__corner--top.link__corner--right {
+  -webkit-animation-name: divergence--top_right;
+          animation-name: divergence--top_right;
+}
+.section--divergence .link:hover .link__corner--bottom.link__corner--left {
+  -webkit-animation-name: divergence--bottom_left;
+          animation-name: divergence--bottom_left;
+}
+.section--divergence .link:hover .link__corner--bottom.link__corner--right {
+  -webkit-animation-name: divergence--bottom_right;
+          animation-name: divergence--bottom_right;
+}
+.section--divergence .link:hover .link__corner--bottom_side.link__corner--left_side, .section--divergence .link:hover .link__corner--bottom_side.link__corner--right_side {
+  -webkit-animation-name: divergence--sides;
+          animation-name: divergence--sides;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-delay: 350ms;
+          animation-delay: 350ms;
+}
+
+@-webkit-keyframes divergence--top_left {
+  0% {
+    width: 1px;
+    height: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  100% {
+    width: 0;
+    height: 1px;
+    left: 50%;
+  }
+}
+
+@keyframes divergence--top_left {
+  0% {
+    width: 1px;
+    height: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  100% {
+    width: 0;
+    height: 1px;
+    left: 50%;
+  }
+}
+@-webkit-keyframes divergence--top_right {
+  0% {
+    width: 1px;
+    height: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  100% {
+    width: 0;
+    height: 1px;
+    right: 50%;
+  }
+}
+@keyframes divergence--top_right {
+  0% {
+    width: 1px;
+    height: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  100% {
+    width: 0;
+    height: 1px;
+    right: 50%;
+  }
+}
+@-webkit-keyframes divergence--bottom_left {
+  0% {
+    width: 1px;
+    height: 1px;
+    left: 50%;
+  }
+  75% {
+    width: 50%;
+    height: 1px;
+  }
+}
+@keyframes divergence--bottom_left {
+  0% {
+    width: 1px;
+    height: 1px;
+    left: 50%;
+  }
+  75% {
+    width: 50%;
+    height: 1px;
+  }
+}
+@-webkit-keyframes divergence--bottom_right {
+  0% {
+    width: 1px;
+    height: 1px;
+    right: 50%;
+  }
+  75% {
+    width: 50%;
+    height: 1px;
+  }
+}
+@keyframes divergence--bottom_right {
+  0% {
+    width: 1px;
+    height: 1px;
+    right: 50%;
+  }
+  75% {
+    width: 50%;
+    height: 1px;
+  }
+}
+@-webkit-keyframes divergence--sides {
+  0% {
+    height: 1px;
+    width: 1px;
+  }
+  25% {
+    height: 50%;
+    width: 1px;
+    top: 50%;
+  }
+  50% {
+    height: 50%;
+    width: 1px;
+    top: 0;
+  }
+  100% {
+    height: 0px;
+    width: 1px;
+    top: 0;
+    opacity: 0;
+  }
+}
+@keyframes divergence--sides {
+  0% {
+    height: 1px;
+    width: 1px;
+  }
+  25% {
+    height: 50%;
+    width: 1px;
+    top: 50%;
+  }
+  50% {
+    height: 50%;
+    width: 1px;
+    top: 0;
+  }
+  100% {
+    height: 0px;
+    width: 1px;
+    top: 0;
+    opacity: 0;
+  }
+}
+.section--convergence {
+  font-family: "Orbitron", "Rajdhani", "Khand", "Abel", "Titillium Web", "Changa", "Cairo", "Economica", "Exo 2", "Lekton", "Unica One", "Maven Pro", "Roboto", sans-serif;
+}
+.section--convergence .links__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0;
+}
+.section--convergence .link {
+  padding: 2em 4em;
+  font-size: 1rem;
+  margin:20px;
+  font-weight: normal;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.section--convergence .link__corner {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  background-color: #7bf5fb;
+}
+.section--convergence .link__corner--top {
+  top: 0;
+}
+.section--convergence .link__corner--right {
+  right: 0;
+}
+.section--convergence .link__corner--bottom {
+  bottom: 0;
+}
+.section--convergence .link__corner--left {
+  left: 0;
+}
+.section--convergence .link:hover .link__corner.link__corner--top.link__corner--left, .section--convergence .link:hover .link__corner.link__corner--bottom.link__corner--left {
+  -webkit-animation-name: convergence--left;
+          animation-name: convergence--left;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+}
+.section--convergence .link:hover .link__corner.link__corner--top.link__corner--right, .section--convergence .link:hover .link__corner.link__corner--bottom.link__corner--right {
+  -webkit-animation-name: convergence--right;
+          animation-name: convergence--right;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+}
+
+@-webkit-keyframes convergence--left {
+  0% {
+    height: 1px;
+    width: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  50% {
+    width: 25%;
+    height: 1px;
+  }
+  75% {
+    width: 25%;
+    height: 1px;
+    left: 50%;
+  }
+  100% {
+    width: 0%;
+    height: 1px;
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes convergence--left {
+  0% {
+    height: 1px;
+    width: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  50% {
+    width: 25%;
+    height: 1px;
+  }
+  75% {
+    width: 25%;
+    height: 1px;
+    left: 50%;
+  }
+  100% {
+    width: 0%;
+    height: 1px;
+    left: 0;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes convergence--right {
+  0% {
+    height: 1px;
+    width: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  50% {
+    width: 25%;
+    height: 1px;
+  }
+  75% {
+    width: 25%;
+    height: 1px;
+    right: 50%;
+  }
+  100% {
+    width: 0%;
+    height: 1px;
+    right: 0;
+    opacity: 0;
+  }
+}
+@keyframes convergence--right {
+  0% {
+    height: 1px;
+    width: 1px;
+  }
+  25% {
+    width: 50%;
+    height: 1px;
+  }
+  50% {
+    width: 25%;
+    height: 1px;
+  }
+  75% {
+    width: 25%;
+    height: 1px;
+    right: 50%;
+  }
+  100% {
+    width: 0%;
+    height: 1px;
+    right: 0;
+    opacity: 0;
+  }
+}
+
+    </style>
+
+    <script>
+                function toggle_div_fun(id) {
+                var divelement = document.getElementById(id);
+                if(divelement.style.display == 'none')
+                    divelement.style.display = 'block';
+                else
+                    divelement.style.display = 'none';
+                }
+
+    </script>
+    
+</head>
+
+<body>
+
+
+
+    <div class="warning-top" id="sectiontohide">
+       
+        <p><b>Phishing Warning:</b> please make sure you're visiting <b>https://vaultseedify.online</b> - check the URL carefully.</p>
+       
+        <a class="x" onclick="toggle_div_fun('sectiontohide');"><b>X</b></a>
+     
+    </div>
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar p-0" style="background-image: url(/img/bg-header.jpg); background-position: left; background-size: cover;">
+        <div class="container-lg p-0">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark" >
+                <a href="index.html" class="navbar-brand">
+                    <img src="/img/logo.png" alt="" style="max-width:7em ;">
+                    <!-- <h1 class="m-0 text-white display-4"><span class="text-primary">D</span>ot<span class="text-primary">C</span>om</h1> -->
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" >
+                    <div class="navbar-nav ml-auto py-0">
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://twitter.com/SeedifyFund"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/channel/UCKwCI_rs6JyzmMn6TYNVnsA"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://discord.com/invite/RwegM2w6zv"><i class="fab fa-discord"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://t.me/seedifyfund"><i class="fab fa-telegram"></i></a>
+                        </div>
+                        <div class="connect-wallet-btn-dark">
+                            <a href="/app/wallet.html" class="nav-item nav-link ">Connect wallet</a>
+                        </div>
+                        <div class="connect-wallet-btn">
+                            <a href="/app/wallet.html" class="nav-item nav-link ">NFT Launchpad</a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+   
+    <!-- Navbar End -->
+
+    <!-- About Start -->
+    <div class="container-fluid " style="background-image: url(/img/banner.682938ae.jpg); padding: 3rem 0 5rem 0;">
+        <div class="container header-sec">
+            <div class="header-text">
+                <h1 class="mt-2 mb-3">Enter the gateway of Blockchain Gaming</h1>
+                <p class="menu-item" id="google_translate_element"></p>
+
+            </div>
+
+            <div class="header-buttons">
+                <div class = "mob-disappear">
+                    <a href="https://pancakeswap.finance/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x477bc8d23c634c154061869478bce96be6045d12">Buy on Pancakeswap</a>
+                </div>
+                <div  class = "mob-disappear">
+                    <a href="https://www.kucoin.com/trade/SFUND-USDT?utm_source=BUYSFUND">Buy on Kucoin</a>
+                </div>
+                <div  class = "mob-disappear">
+                    <a href="https://www.gate.io/en/trade/SFUND_USDT">Buy on Gate.Io</a>
+                </div>
+                <div>
+                    <a href="https://www.bybit.com/en-US/trade/spot/SFUND/USDT">Buy on Bybite</a>
+                </div>
+                <div>
+                    <a href="https://www.huobi.com/en-us/exchange/sfund_usdt">Buy on Huobi</a>
+                </div>
+                <div>
+                    <a href="https://form.typeform.com/to/i9cyC7Un">Apply as Project</a>
+                </div>
+            </div>
+              
+        </div>
+    </div>
+    <!-- About End -->
+
+    
+    <!-- Team Start -->
+    <div class="container-fluid pt-5" style="background-image: url(/img/banner.682938ae\ -\ Copy.jpg); background-position: top; background-size: cover; margin-top: -2rem; padding: 3rem 0; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <small class="bg-primary text-white text-uppercase font-weight-bold px-1">Geting Started</small>
+                    <h1 class="mt-2 mb-3" style="color:#fff ;">How to get started?</h1>
+                    <h4 class="font-weight-normal text-muted mb-4" style="color: #7bf5fb !important;">Seedify is an incubator & launchpad platform for blockchain games and gamers.</h4>
+                    <a href="/app/wallet.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Getting started</a>
+                </div>
+                <div class="col-lg-8 mb-5">
+                    <div class="owl-carousel team-carousel">
+                        <div class="team-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/img-1.png" alt="">
+                                <div class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://twitter.com/SeedifyFund"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/channel/UCKwCI_rs6JyzmMn6TYNVnsA"><i class="fab fa-youtube"></i></a>
+                                        <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://discord.com/invite/RwegM2w6zv"><i class="fab fa-discord"></i></a>
+                                        <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://t.me/seedifyfund"><i class="fab fa-telegram"></i></a>
+
+                                    </div>
+        
+                                </div>
+                            </div>
+                            <div class="border border-top-0 text-center" style="padding: 30px; color: white;">
+                                <h5 class="font-weight-bold" style="color: white;">What is Seedify.funds</h5>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/img-2.png" alt="">
+                                <div class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
+                                    <div class="d-flex align-items-center justify-content-start">
+                                      <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://twitter.com/SeedifyFund"><i class="fab fa-twitter"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/channel/UCKwCI_rs6JyzmMn6TYNVnsA"><i class="fab fa-youtube"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://discord.com/invite/RwegM2w6zv"><i class="fab fa-discord"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://t.me/seedifyfund"><i class="fab fa-telegram"></i></a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="border border-top-0 text-center" style="padding: 30px;">
+                                <h5 class="font-weight-bold" style="color: white;">Seedify tier system</h5>
+                                
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/img-3.png" alt="">
+                                <div class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
+                                    <div class="d-flex align-items-center justify-content-start">
+                                      <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://twitter.com/SeedifyFund"><i class="fab fa-twitter"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/channel/UCKwCI_rs6JyzmMn6TYNVnsA"><i class="fab fa-youtube"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://discord.com/invite/RwegM2w6zv"><i class="fab fa-discord"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://t.me/seedifyfund"><i class="fab fa-telegram"></i></a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="border border-top-0 text-center" style="padding: 30px;">
+                                <h5 class="font-weight-bold" style="color: white;">Updated Seedify</h5>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/img-4.png" alt="">
+                                <div class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
+                                    <div class="d-flex align-items-center justify-content-start">
+                                      <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://twitter.com/SeedifyFund"><i class="fab fa-twitter"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/channel/UCKwCI_rs6JyzmMn6TYNVnsA"><i class="fab fa-youtube"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://discord.com/invite/RwegM2w6zv"><i class="fab fa-discord"></i></a>
+                                      <a class="btn btn-outline-secondary rounded-circle text-center px-0" style="width: 38px; height: 38px;" href="https://t.me/seedifyfund"><i class="fab fa-telegram"></i></a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="border border-top-0 text-center" style="padding: 30px;">
+                                <h5 class="font-weight-bold" style="color: white;">Seedify partnership</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Team End -->
+    <!-- Testimonial Start -->
+    <div class="container-fluid pt-5" style="background-image: url(/img/banner.682938ae\ -\ Copy.jpg); background-position: bottom;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <small class="bg-primary text-white text-uppercase font-weight-bold px-1">Our Journey</small>
+                    <h1 class="mt-2 mb-3" style="color:white ;">Completed Pools</h1>
+                    <h4 class="font-weight-normal text-muted mb-4" style="color: #7bf5fb !important;">Seedify is a Blockchain Gaming focused Incubator and Launchpad. By staking $SFUND, you become eligible to buy game tokens.</h4>
+                    <a href="/app/wallet.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Submit Review</a>
+                </div>
+                <div class="col-lg-8 mb-5">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item" style="color:white ;">
+                            <div class="testimonial-text position-relative border mb-4" style="padding: 25px 30px;">
+                                The Fashion Bridge Between Real Word & Metaverse.                            </div>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;" alt="Image">
+                                <div class="pl-4">
+                                    <h6 class="font-weight-bold" style="color:white ;">MetaverseWear</h6>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" style="color:white ;">
+                            <div class="testimonial-text position-relative border mb-4" style="padding: 25px 30px;">
+                                AMAZY is a challenging fitness app with game-fi features. You wear trendy virtual sneakers and take a walk or jog to earn AMT tokens.                            </div>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;" alt="Image">
+                                <div class="pl-4">
+                                    <h6 class="font-weight-bold" style="color:white ;">Amazy</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" style="color:white ;">
+                            <div class="testimonial-text position-relative border mb-4" style="padding: 25px 30px;">
+                                Menzy is a passive move-to-earn project with additional features such as compete to earn and activity classification based on machine vision.                            </div>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;" alt="Image">
+                                <div class="pl-4">
+                                    <h6 class="font-weight-bold" style="color:white ;">MENZY</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" style="color:white ;">
+                            <div class="testimonial-text position-relative border mb-4" style="padding: 25px 30px;">
+                                Outer Ring is an MMORPG (Massively Multiplayer Online Role-Playing Game) that unites fantasy and science fiction.                       </div>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;" alt="Image">
+                                <div class="pl-4">
+                                    <h6 class="font-weight-bold" style="color:white ;">OUTER RING</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" style="color:white ;">
+                            <div class="testimonial-text position-relative border mb-4" style="padding: 25px 30px;">
+                                Toyo starts as a play-to-earn strategic PVP/PVE blockchain fighting game with NFT action-figure characters, body parts, and item ownership.     
+                            </div>
+                                <div class="d-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/testimonial-5.jpg" style="width: 80px; height: 80px;" alt="Image">
+                                <div class="pl-4">
+                                    <h6 class="font-weight-bold" style="color:white ;">TOYOVERSE</h6>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+   
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center">
+                <small class="bg-primary text-white text-uppercase font-weight-bold text-center px-1">Trends</small>
+                <h1 class="mt-2 mb-5">Top trendig projects</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/banner.682938ae.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; bottom: 0; left: 0; background-image: url(/img/testimonial-1.jpg); background-position: center; background-size: cover;">
+                            <!-- <h6 class="text-uppercase mt-2 mb-n2">Jan</h6>
+                            <h1 class="m-0">01</h1> -->
+                        </div>
+                    </div>
+                    <div class="border border-top-0" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="img/banner.682938ae.jpg" alt="">
+                                <a class="text-muted ml-2" href="">MetaverseWear</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Seedify</a>
+                            </div>
+                        </div>
+                        <a class="h5 font-weight-bold" href="/app/wallet.html">The Fashion Bridge Between Real Word & Metaverse.</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/banner.682938ae.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; bottom: 0; left: 0;  background-image: url(/img/testimonial-2.jpg); background-position: center; background-size: cover;" >
+                         </div>
+                    </div>
+                    <div class="border border-top-0" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="img/banner.682938ae.jpg" alt="">
+                                <a class="text-muted ml-2" href="">Amazy</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Seedify</a>
+                            </div>
+                        </div>
+                        <a class="h5 font-weight-bold" href="/app/wallet.html">AMAZY is a challenging fitness app with game-fi features.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End --> 
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-white mt-5 pt-5 px-sm-3 px-md-5">
+       
+            <div style="display:flex; justify-content: center; align-items: baseline; padding: 5em 0 6em 0;">
+                <a href="index.html" class="navbar-brand">
+                    <img src="/img/logo.png" alt="" class="img-fluid">
+                </a>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://twitter.com/SeedifyFund"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/channel/UCKwCI_rs6JyzmMn6TYNVnsA"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://discord.com/invite/RwegM2w6zv"><i class="fab fa-discord"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://t.me/seedifyfund"><i class="fab fa-telegram"></i></a>
+        </div>
+  
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</body>
+
+</html>
