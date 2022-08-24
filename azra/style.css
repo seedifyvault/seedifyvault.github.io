@@ -1,0 +1,493 @@
+*::before,
+*::after {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    background: rgb(50, 65, 74);
+    border-radius: 4px;
+    height: 8px;
+    width: 8px
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+:root {
+    --main-color: rgb(23, 33, 43);
+    --main-color-nav: rgb(33, 33, 43);
+    --main-font-color: rgb(222, 222, 222);
+    --secondary-color: rgb(142, 216, 248);
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+html {
+    background: var(--main-color);
+    color: var(--main-font-color);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(23, 33, 43) 0%, rgb(33, 33, 43) 100%);
+    background-attachment: fixed;
+}
+
+footer {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin: 0.2em;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgb(249, 170, 143);
+}
+
+h2 {
+    margin: 0.3em;
+}
+
+h2 a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+h4 {
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 0.7em 0;
+}
+
+p {
+    font-size: 1.1em;
+    padding: 0 0.7em;
+}
+
+.container-fixed {
+    display: flex;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgb(33, 33, 43);
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 900;
+    flex-grow: 1;
+
+}
+
+.logo p {
+    margin: 0;
+    padding: 0;
+}
+
+.avatar-photo {
+    padding-top: 1.5em;
+}
+
+
+
+.nav-block {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+
+    flex-grow: 4;
+}
+
+.navbar-fixed li {
+    width: 100%;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid var(--main-color);
+    text-align: center;
+}
+
+.navbar-fixed li:hover,
+.navbar-fixed li:active {
+
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.nav-footer {
+    flex-grow: 0.5;
+}
+
+
+.sizing {
+    font-size: 1.5em;
+    gap: 1.5rem;
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.nav-social-list svg:hover {
+    fill: var(--secondary-color);
+}
+
+.nav-social-list:hover {
+    color: var(--secondary-color);
+    transform: translateY(0.3rem);
+}
+
+.nav-social-list {
+    transition: transform 0.3s ease-in
+}
+
+ion-icon {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--main-font-color);
+
+}
+
+/* container content */
+
+.container-content {
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 41%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+
+}
+
+#welcome-section,
+#projects,
+#contact {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+
+}
+
+#projects {
+    flex-direction: column;
+    height: 100%;
+}
+
+.wellcome-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+}
+
+.portfolio-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-grid {
+    display: grid;
+
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    text-shadow: 2px 2px 8px var(--secondary-color);
+}
+
+.project-image {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* container footer */
+#container-footer,
+#stay-with-ukraine {
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.footer-content,
+.swu-content {
+
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+    align-items: center;
+    background: var(--main-color-nav);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swu-content {
+
+    height: 30vh;
+}
+
+
+
+.footer-nav-block,
+.toggler {
+    display: none;
+}
+
+.back-on-top {
+    position: fixed;
+    bottom: 1.2em;
+    right: 1.5em;
+    background: var(--main-font-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--main-color-nav);
+}
+
+.to-top a {
+    color: var(--secondary-color);
+    font-size: 1.8em;
+}
+
+@media screen and (max-width: 720px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .toggler {
+        display: block;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+        z-index: 50;
+
+        right: 6.5em;
+        top: 7px;
+    }
+
+    .container-content,
+    #container-footer,
+    #stay-with-ukraine,
+    .swu-content {
+        margin-left: 0;
+
+    }
+
+    .container-fixed {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 80px;
+        top: 0;
+        background-color: var(--main-color-nav);
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .nav-block {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .container-fixed .logo {
+        font-size: 3em;
+
+    }
+
+    .nav-menu li {
+        display: none;
+
+    }
+
+
+
+    .hamburger {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        padding: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        right: 5em;
+    }
+
+    .hamburger div {
+        position: relative;
+        background: var(--main-font-color);
+        height: 3px;
+        width: 95%;
+    }
+
+    .hamburger div::before,
+    .hamburger div::after {
+        content: '';
+        position: relative;
+        background: var(--main-font-color);
+        top: 10px;
+        height: 3px;
+        width: 95%;
+    }
+
+    .hamburger div::after {
+        top: -13px;
+
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+
+    .footer-nav-block {
+        background: var(--main-color-nav);
+        width: 0%;
+        height: 100vh;
+        z-index: 7;
+        border-left: 1px solid rgba(34, 37, 89, 0.33);
+
+    }
+
+
+    .toggler:checked~.footer-nav-block {
+        width: 30%;
+    }
+
+    .footer-nav-block {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        visibility: hidden;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+
+    .toggler:checked~#navbar .footer-nav-block {
+        width: 30%;
+    }
+
+    .toggler:checked~#navbar .footer-nav-block {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .toggler:checked+.hamburger>div {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .toggler:checked+.hamburger>div::before {
+        top: 3px;
+        transform: rotate(45deg);
+        background: white;
+    }
+
+    .toggler:checked+.hamburger>div::after {
+        top: 0;
+        transform: rotate(135deg);
+        background: white;
+    }
+
+    .nav-social {
+        gap: 0.1em;
+    }
+}
